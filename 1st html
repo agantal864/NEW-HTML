@@ -1,0 +1,651 @@
+<html>
+<head>
+<title>Merc's Dorimitory - The Finest Dormitory in Mintal</title>
+<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        background-color: #fff;
+        margin: 0;      
+        font-family: 'Muli', sans-serif; 
+        
+    }  
+    
+    .subnav {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 9%;
+        border-bottom: solid medium black;
+        background: rgba(255,255,255,0);
+        transition: 0.3s;
+    } 
+    .subnav:hover {
+        background: rgba(255,255,255,0.9); 
+    }
+    .subnav::after {
+        content: '';
+        display: table;
+        clear: both;
+    }  
+    .logo {
+        display: block;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }       
+     nav.top {
+        position: relative;
+        width: 100%;
+        height: 10%;
+        border-bottom
+        margin: 0;  
+        padding: 0;
+        border: 0;
+        background-color: black;
+        border-bottom-style: solid;
+        border-bottom-color: orange;
+        border-bottom-width: 3px;
+         
+    }
+    nav ul {
+        text-align: center;
+        max-width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -100%);
+
+    }
+
+    ul.container {
+        max-height: 100%;
+        padding: 0;
+    }
+
+    nav li  {
+        display: inline-block;
+        list-style: none;
+        padding-top: 2px;
+        margin-left: 60px;
+        margin-right: 60px;
+        
+        
+    }
+    nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: black;
+        position: relative;
+    }
+    nav a::before {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: black;
+        position: sticky;
+        top: 100%;
+        width: 0%;
+        transition: all ease-in-out 250ms;
+    }
+    
+    nav a.exc:hover::before {
+        width: 100%;
+    }
+    a:hover {
+        color: darkorange;
+        trasition: 0.5s;
+    }
+    .dropdown {
+        display: inline-block;
+        padding-top: 2px;
+    }
+    .dropdown-content{
+        display: none;
+        background: rgba(255,255,255,0.9);
+        border: outset medium black;
+        min-width:200px;
+    }
+    
+    .dropdown:hover .dropdown-content{
+        position: absolute;
+        display: block;
+    }
+    ul.container {
+        max-width: 100%;
+        
+    }
+
+    div.tax {
+        margin-top: 0px;
+        height: 100%; 
+        max-width: 100%;
+        background-image: url(Assets/23.jpg);
+        border-bottom: 0.5px solid #505050;
+        background-repeat: no-repeat;
+        background-size: 100% 100%; 
+    }
+     .blank {    
+        position: relative; 
+    }
+    
+    h1.tagline {
+        font-size: 30px;
+        text-transform: uppercase;
+        margin: 0;
+        position: absolute; 
+        align-items: center;
+        top: 50%; 
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+    .mercs {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 12%;
+        height: 25%;
+       
+    }
+   
+    .room {
+        width: 100%;
+        height: 25%;
+        border-radius: 10px;
+        border: 1px solid #ebebeb;
+        box-sizing:content-box;
+    }
+    
+     .room1 {
+        
+        width: 100%;
+        height: 25%;
+        border-radius: 10px;
+        border: 1px solid #ebebeb;
+        box-sizing:content-box;
+    }
+    
+    div.left {
+        float: left;
+        width: 50%;
+    }
+    div.right {
+        width: 50%;
+        float: right;
+    }
+    .roomtext {
+        display: block;
+        width: 100%;
+        margin: auto;
+        height: 30px;
+    }
+    p.names {
+        width: 50%;
+        margin: 20px auto;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: center;
+        font-weight: bold;
+        color: gray;
+    }
+
+    
+    div.content {
+        align-content: center;
+        width: 100%;
+        height: 60%;
+        margin: auto;
+        margin-top: 20px;
+        border-bottom: 0.5px solid #505050;
+    }
+    
+    div.table1 {
+        float:left; 
+        display: inline-block;
+        margin: 11px;
+        width: 23%;
+        height: 100%;
+    }
+    .cctv {
+        width: 60%;
+        height: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+    .money {
+        width: 80%;
+        height: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+    .internet {
+        width: 60%;
+        height: 25%;
+        padding: 9%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .award {
+        width: 80%;
+        height: 30%;
+        padding: 6.5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .h2description {
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .pdescription {
+        text-align:center;
+    }
+    div.about {
+        width: 100%;
+        height: 680px;
+        background-color: white;
+        border-top: 0.5px solid #505050;
+    }
+    .content {
+        align-content: center;
+        max-width: 100%;
+        height: 100%;
+        margin: 10px 100px;
+        background-color: white;
+    }
+    .founder {
+        align-content: center;
+        max-width: 100%;
+        height: 120px;
+        background-color: white;
+        border-bottom: 1px solid lightgray;
+    }
+     .founder1 {
+        align-content: center;
+        max-width: 100%;
+        height: 25%;
+        background-color: white;
+    }
+    div.prof { 
+       float: left;
+       width:10%;
+      
+    }
+    div.prof2 { 
+       float: left;
+       width: 80%;
+       margin-bottom: 25px;
+        position: relative;
+    }
+    .andy {
+        float: left;
+        height: 80px;
+        margin: 20px 0px 15px;
+        
+    }
+     p.Note {
+        text-transform: uppercase;
+        color: rgba(0,0,0,.54);
+        font-weight: bold; 
+        
+    }
+    p.Note1 {
+        color: black;
+        text-align: justify;
+    }
+    .tagline em {
+        color: darkorange;
+        font-style: normal;
+    }
+    .first {
+        max-width: 100%;
+        height: 1000px;
+        border-bottom: 0.5px solid #505050;
+    }
+    .collection {
+        max-width: 100%;
+        height: 100px;
+    }
+    .pictures {
+        margin-top: 60px;
+        width: 75%;
+        height: 700px;
+        float: right;
+    }
+    .box {
+        margin-left: 40px;
+        max-width: 50%;
+        height 100px;
+        margin: 0px auto 70px;
+    }
+    div.Design {
+        float: left;
+        color: #505050;
+        margin: 20px;
+        margin-top: 60px;
+        width: 20%;
+        height: 300px;
+        border: 2px ridge #ebebeb;   
+    }
+    .Amenities {
+        width: 100%;
+        height 500px;
+    }
+    .content2 {
+        align-content: center;
+        max-width: 100%;
+        height: 100%;
+        margin: 10px 100px;
+    }
+    div.history {
+        height: 830px;
+        width: 85%;
+        margin: auto;
+    }
+    
+
+</style>    
+
+</head>
+
+
+
+<body>
+
+    
+    <div class="1st">
+    <nav class="top">
+        <img src="Assets/logo%20(1).png" style="width: 15%" class = "logo">
+    </nav>
+    </div>
+    
+<div class="subnav">
+    <nav>
+        <ul class= "container">
+            
+        <li><a class ="exc" href="Merc's%20Dormitory.html"><i class="fa fa-home"></i> Home</a></li>
+            <div class="dropdown">
+                <li class="dropbtn"><a class ="exc" href="#"><i class="fa fa-pencil"></i> Features <i class="fa fa-caret-down"></i></a></li>
+                    <div class="dropdown-content">
+                        <a href="#Des">Design</a>
+                        <a href="#Amenity">Amenities</a>
+                    </div>
+            </div>    
+        <li><a class ="exc" href="Directions.html"><i class="fa fa-paper-plane-o"></i> Direction</a></li>
+            <div class="dropdown">
+                <li class="dropbtn"><a class ="exc" href="#"><i class="fa fa-users"></i> About <i class="fa fa-caret-down"></i> </a></li> 
+                    <div class="dropdown-content">
+                        <a class="exc2" href="#About">Team</a>
+                        <a href="#historyone">History</a>
+                    </div>
+            </div>
+        <li><a class ="exc" href="#contactus"><i class="fa fa-phone"></i> Contact Us</a></li>
+        
+        </ul>
+        
+        
+    </nav>
+  
+</div>
+    
+        
+    <div class="tax">
+        <div class="blank">
+        </div>
+        <h1 class= "tagline">Once you're in Merc's, <em>you'll never want to leave</em></h1>   
+    </div>
+    
+    
+    <div class="First">
+       <div class="collection">
+           <p id ="Des" style="float:left; margin: 50px 10px 10px 25px; max-width: 100%; text-transform: uppercase; color: rgba(0,0,0,.54); font-weight: bold">Design/Gallery</p> 
+        </div>
+        
+        <div class = "Design">
+        
+    <h1 style="margin: 15px; font-size: 20px; color: rgba(0,0,0,.54); ">Design</h1>
+        <p style="text-align:justify-all; margin:0px 20px; ">Merc's Dormitory refers to the architecture of modern derived design categories. The design style categories shown are the inside portrayal rather than the objective architectural interpretations.</p>
+        <p style="margin-left: 20px; margin-bottom: 5px; font-size: 15px;"><i class="fa fa-building" aria-hidden="true"></i> Architect: Visionarch</p>
+        <p style="margin-left: 20px; margin-top: 5px; font-size: 15px;"><i class="fa fa-camera-retro" aria-hidden="true"></i> Photographs: Fourthram</p>
+    </div>
+        
+        
+        <div class="pictures">
+       
+             <div class="left">
+                <div class="box">
+                <img class="room" src="Assets/dorm-room.jpg">
+                <div class="about1">
+                 <p class="Names">Rooms</p></div>
+               
+                 </div>
+                 <div class="box">
+                <img class="room" src="Assets/living%20room.jpg">
+                <p class="Names">Living Room</p>
+                 </div>
+                <div class="box">
+                <img class="room" src="Assets/Comfort.jpg">
+                <p class="Names">Comfort Room</p>
+                </div>
+        
+            </div>
+            
+             <div class="right">
+                <div class="box">
+                <img class="room1" src="Assets/Hallway.jpg">
+                <div class="about1">
+                 <p class="Names">Hallway</p></div>
+               
+                 </div>
+                 <div class="box">
+                <img class="room1" src="Assets/lobby.jpg">
+                <p class="Names">Lobby</p>
+                 </div>
+                <div class="box">
+                <img class="room1" src="Assets/studyarea.jpg">
+                <p class="Names">Study Area</p>
+                </div>
+        
+            </div >
+        </div>
+    </div>
+            
+        
+    
+    
+    
+      <div id="Amenity" class="Amenities">
+        <div class = "content">
+        
+            <div class="table1">
+                <img src="Assets/cctv.png" class="cctv">
+                <h2 class="h2description">Full Security</h2>
+                <p class="pdescription">Merc's Dormitory provides full security inside the premise for the safety of every dormers.</p>
+                
+            </div>
+            <div class="table1">
+                <img src="Assets/budget.png" class="money">
+                <h2 class="h2description">Budget-Friendly</h2>
+                <p class="pdescription">Merc's Dormitory is well known for its affordable price that attract lots of students.</p>
+                
+            </div>
+            <div class="table1">
+                <img src="Assets/internet.png" class="internet">
+                <h2 class="h2description">Internet</h2>
+                <p class="pdescription">Merc's Dormitory enforces the high-speed 200mbps internet connection to cater the needs of every dormers.</p>
+            </div>
+            <div class="table1">
+                <img src="Assets/awards.png" class="award">
+                <h2 class="h2description">Prestigious Award</h2>
+                <p class="pdescription">Merc's Dormitory is fully recognized by the University of the Philippines Mindanao as one of the prestigious dormitories in Mintal.</p>
+            </div>
+            
+        </div> 
+    </div>
+    
+    
+    
+    
+     <div class="history" id="historyone">
+       
+       <div style=" height: 80px; margin: auto;">
+           <h3 style="margin: 0;padding-top: 50px; text-transform: uppercase; color: rgba(0,0,0,.54); font-weight: bold">Company History</h3>
+         
+       </div>
+      <h5 style="margin: 0; padding-top: 10px; padding-bottom: 20px;  text-transform: uppercase; color: darkorange; font-weight: bold; border-bottom: solid 1px lightgray;">Mission and Vision</h5>
+       <div class="left1" style="float:left; width: 60%; height: 500px; background-color: white; position: relative;">
+         
+            <img src="Assets/Second%20BG%20(1).png" style="width: 80%; height: 300px; margin: auto; position: absolute; top: 35%; 
+        left: 40%; margin-right: -40%; transform: translate(-40%, -40%); border: groove medium lightgray; ">
+           
+           <h5 style="margin-left: 50px; text-transform: uppercase; color: darkorange; font-weight: bold; margin-top: 400px;">Foundation</h5>
+           <p style=" width: 80%; margin: auto; text-align: justify; margin-top: 30px; ">“I remember during my college days, I was having trouble searching for a comfortable and affordable home of stay.” Caesar (2019)</p>
+            <p style="width: 80%; margin: auto; text-align: justify; margin-top: 30px; ">The absence of a place to stay exploits people with their right to live, resulting to settle in a place they don't deserve. </p>
+             <p style="width: 80%; margin: auto; text-align: justify; margin-top: 30px; ">Despite of having a gruesome past, Mr. Merc, with his resolve, promises to never make anyone feel his pain before.</p>
+           
+           </div>
+            
+       <div class="right2" style="width: 40%;height: 600px; float: left; margin-top: 50px; background-color: white;">
+           <div style="width: 100%; height: 50%;">
+           <img src="Assets/Mission.jpg" style="width: 100%; height: 270px; border: groove thin lightgray;">
+           </div>
+           
+           <div style="width: 100%; height: 50%;">
+            <img src="Assets/vision.jpg" style="width: 100%; margin-top: 15px;  height: 280px; border: groove thin lightgray;">
+           </div>
+        </div>
+        
+    
+    
+    
+    </div>
+    
+    
+    
+    
+
+    
+    
+<div id="About" class="about">
+    <div class="content2">
+        <div class="founder">
+            <div class="prof">
+                <img src="Assets/MercLogo.png" class="Andy">
+            </div>
+            <div class="prof2">
+                <h3 style="text-transform: uppercase; margin: 25px 0px 0px; font-size: 12px; color: rgba(0,0,0,.54);" >About</h3>
+                <h3 style="text-transform: uppercase; margin: 2px 0px 0px; font-size: 15px; color: darkorange;"> Merc's Dormitory</h3>
+                <p style="margin-top: 7px; font-size: 12px; color: rgba(0,0,0,.54);">Merc's Dormitory is a rental service that provides a temporary home for the students in University of the Philippines Mindanao</p>
+            </div>
+           
+        </div>
+        
+        
+        <div class="founder">
+                <p class="Note">Note From the Owner</p>
+                <p class="Note1">During your first or second year of university life, you will mostly be living in a student housing. There are lots of prevalent issues faced by students. To address some of these, our establishment was built. Through the power of technology, it allowed more recognition amongst the students and has been often regarded as the go-to place for a quality place to stay in the university.</p>
+            </div>
+         <div class="founder1">
+            <p class="Note" style="margin: 15px 0px 0px;">Team</p>
+             <div class="prof">
+                 <img src="Assets/azis.jpg" class="Andy" style="position: static;">
+                 <img src="Assets/kenan.jpg" class="Andy" style="position: static;">
+                 <img src="Assets/steve.jpg" class="Andy" style="position: static;">
+             </div>
+            <div class="prof2">
+                <h3 style="text-transform: uppercase; margin: 25px 0px 0px; font-size: 12px; color: rgba(0,0,0,.54);" >Co-Founder</h3>
+                <h3 style="text-transform:capitalize; margin: 10px 0px 0px; font-size: 13px; color: darkorange;" >Azis Thanos</h3>
+                <h3 style="margin: 10px 0px 0px; font-size: 13px; color: rgba(0,0,0,.54);" >Designer at MIT - University of the Philippines Mindanao</h3>
+            </div>
+             <div class="prof2">
+                <h3 style="text-transform: uppercase; margin: 25px 0px 0px; font-size: 12px; color: rgba(0,0,0,.54);" >Co-Founder</h3>
+                <h3 style="text-transform:capitalize; margin: 10px 0px 0px; font-size: 13px; color: darkorange;" >Andrew Kenan</h3>
+                <h3 style="margin: 10px 0px 0px; font-size: 13px; color: rgba(0,0,0,.54);" >Designer at Google - University of the Philippines Mindanao</h3>
+            </div>
+             <div class="prof2">
+                <h3 style="text-transform: uppercase; margin: 25px 0px 0px; font-size: 12px; color: rgba(0,0,0,.54);" >Co-Founder</h3>
+                <h3 style="text-transform:capitalize; margin: 10px 0px 0px; font-size: 13px; color: darkorange;" >Steve Narl</h3>
+                <h3 style="margin: 10px 0px 0px; font-size: 13px; color: rgba(0,0,0,.54);" >Designer at Apple - University of the Philippines Mindanao</h3>
+            </div>
+             
+    
+    
+        </div>
+            
+        </div>
+         
+</div>
+            
+         
+
+         
+  
+   
+    
+    <div id= "contactus" style="width: 85%; margin: auto; height: 200px; border-top: groove thin lightgray; "> 
+        
+        
+         <div style=" height: 50px; margin: auto;">
+           <h4 style="margin: 0;padding-top: 20px; text-transform: uppercase; text-align: center; color: rgba(0,0,0,.54); font-weight: bold">Contact Us</h4>
+       </div>
+        
+        <div style="width: 100%; height: 200px;">
+        <div class="left" style="width: 33%; height: 200px; display: inline-block;">
+                     <p style="font-size: 12px; text-align: center; margin-bottom: 20px; color: darkorange;"><b>YOU CAN ALSO REACH US</b></p>
+            <p style="font-size: 13px; text-align: center;color: darkorange;">For Reservations:</p>
+                    <h5 style= "text-align: center; margin: 5px;">Tel. (082) 233-2186</h5>
+                    <h5 style="text-align: center; margin: 5px;" >Fax. (085) 221-9429</h5>
+                    <h5 style= " text-align: center;font-weight: 100; color: darkorange; margin: 5px;">mintal@mercsdorm.com</h5>
+            
+            
+            </div>
+        <div style="width: 33%;  height: 200px; text-align: center; display: inline-block;">
+        <img src="Assets/MercLogo.png" style="width: 80px; margin-top: 30px; height: 80px;">
+             <h3 style="text-transform: uppercase; font-size: 12px; color: rgba(0,0,0,.54); text-align: center;" >Merc's Dormitory</h3>
+            
+            </div>
+            
+            
+        <div class="right" style="width: 33%; height: 200px;display: inline-block;">
+            
+              <p style="font-size: 13px; text-align: center; margin: 0; margin-top: 8px; margin-bottom: 8px; color: darkorange;"><b>Connect With US</b></p>
+            
+            
+            
+                <div style="margin: auto; width: 80%; height: 150px; text-align: center;">
+                <img src="Assets/icons.png" style="text-align: center; height: 120px; width: 70%;">
+                    
+            </div>
+          
+            
+            </div>
+            
+            
+        </div>
+    </div>
+    
+            
+          
+    
+   
+    
+    
+  
+</body>
+
+
+
+</html>
+
